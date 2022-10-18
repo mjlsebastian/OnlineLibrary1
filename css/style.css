@@ -1,0 +1,120 @@
+/* book container */
+body {
+	margin: 0;
+    background-color: white;
+}
+.book-container {
+	display:flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.book-container .card {
+	background-color: whitesmoke ;
+	width: 250px;
+	height: auto;
+	margin: 20px 10px;
+    border-radius: 22px;
+    display: flex;
+    flex-direction: column;
+}
+.book-cover {
+	width: 100%;
+    height: 410px;
+    border-radius: 20px 20px 0 0;
+    background-color: whitesmoke;
+}
+.book-info {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-between;
+    /* background-color: whitesmoke; */
+}
+.book-info p {
+    padding: 0 15px;
+	text-align: center;
+    font-size: smaller;
+    margin: 5px 0px 5px 0;
+    background-color: whitesmoke;
+    color: black;
+}
+.price {
+    color: rgb(207, 26, 26);
+    font-size: smaller;
+    text-align: center;
+    background-color: whitesmoke;
+}
+.buttons {
+	display: flex;
+    width: 100%;
+    height: 60px;
+    border-radius: 0 0 20px 0;
+}
+.btn-cart {
+	background-color: rgb(224, 224, 224);
+    color: #183453f3;
+    text-decoration: none;	
+    font-size: smaller;
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 0 20px;
+}   
+.btn-wish {
+	background-color: rgb(224, 224, 224);
+    color: #183453f3;	
+    text-decoration: none;
+    flex-grow: 2;
+    font-size: smaller;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.btn-buy {
+	background-color: #183453f3;
+    color: rgb(224, 224, 224);	
+    text-decoration: none;
+    flex-grow: 2;	
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 20px 0;
+}
+.checkout button {
+    background-color:#22b877;
+    width: 300px;
+    margin: 50px;
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 20px;
+    border-style: none;
+    color: whitesmoke;
+    font-size: 17px;
+    font-weight: 500;
+    align-items : center;
+}
+.buttons i{
+    font-size: large;
+    margin-bottom: 5px;
+}
+
+@media (max-width:540px) {
+    .book-container {
+        flex-direction: column;
+        align-self: center;
+        margin-top: 40px;
+    }
+    .checkout button{
+        flex-direction: column;
+        align-self: center;
+        margin-top: 40px;
+    }
+    
+}
+

@@ -1,0 +1,84 @@
+/* header banner */
+body {
+    margin: 0%;
+    font-family: 'Poppins', sans-serif;
+    background-color: whitesmoke;
+    background-image: url("background-img.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+.sideNav {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.sideNav a:hover {
+    color: white;
+}
+.sideNav .closeBtn {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 20px;
+    margin-left: 50px;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2% 5; 
+    padding-right: 25px;
+}
+.row .column1 {
+    padding-right: 25px;
+}
+.column1 h1 {
+    font-size: 60px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.column1 p {
+    font-size: 25px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.column1 button {
+    width: 150px;
+    padding: 12px 20px;
+    border-radius: 20px;
+    border-style: none;
+    color: #183453f3;
+    font-size: 17px;
+    font-weight: 500;
+    align-self: center;
+    
+}
+/* Header content responsive */
+@media screen and (max-width: 980px) {
+    .column2 img {
+        width: 350px;
+    }
+    .column1 h1 {
+        font-size: 40px;      
+    }
+    .column1 p {
+        font-size: 17px;
+    }
+    .row {
+        margin-top: 80px;
+    }
+}
+@media screen and (max-width: 540px) {
+    .column2 img {
+        width: 350px;
+    }
+    .column1 h1 {
+        font-size: 40px;      
+    }
+    .row {
+        flex-direction: column;
+    }
+    .row .column1 {
+        padding: 30px;
+    }
+}

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KodeGO WD23 | eBookCorner | Online Library </title>
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/29a4200528.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+          background-image: url('images/banner-img1.jpg');
+          background-repeat: no-repeat;
+          background-attachment: fixed;  
+          background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+<!-- <div>
+        Header content with banner image
+        <div class="row">
+            <div class="column1">
+                <h1>eBook Corner</h1>
+                <p>Book is Life!</p>
+                <p><button>Find Books</button></p>
+            </div>
+            <div class="column2">
+                <img src="images/banner.png" alt="banner" width=" 500px">
+            </div>
+        </div>
+</div> -->
+
+<div>
+    <div class="navbar">
+        <!-- Navbar logo -->
+        <div class="nav-header">
+            <div class="nav-logo" style="padding-top: 10px;">
+                <a href="index.html">
+                    <img src="images/logo.jpg" width="131px" alt="logo">
+                </a>
+        <!-- navbar items -->
+            <div class="nav-links">
+                <a href="index.html" style="color: white;" >Home</a>
+                <a href="#" style="color: white;">About</a>
+                <a href="#" style="color: white">Contact Us</a>
+                <!-- <button type="button" style="padding: 2px 15px;">Login</button> -->
+            </div>
+        </div>
+    
+        <!-- responsive navbar toggle button -->
+        <input type="checkbox" id="nav-check1">
+        <div class="nav-btn" style="padding: 2px;">
+            <label for="nav-check">
+                <span></span>        
+                <span></span>        
+                <span></span>           
+            </label>
+        </div>
+
+    </div>
+
+</div>
+<div> 
+    <div class="search"> 
+        <label for="book" style="font-size: small; background-color: white; padding: 2px 5px 0 5px ;">Category</label>
+        <select name="book" id="book" class="input-field1">
+            <option value="1">Romance</option>
+            <option value="2">Kids Story</option>
+            <option value="3">Fantasy</option>
+        </select>
+        <label for="Search Book"></label>
+            <input type="text" placeholder="Author" id="author" class="input-field1">
+            <input class="submit" type="submit" value="Search">
+    </div>
+</div>
+<div>
+        <!-- Book container -->
+    
+        <div class="book-container">
+            <div class="card">
+                <img class="book-cover" src="images/image1.jpg">
+                <div class= "book-info">
+                    <p> 
+                        <div class="title" style="font-size: small; text-align: center;" >To Kill A Mockingbird </div>
+                        <div class="author" style="font-size: small; text-align: center;">Harper Lee </div>
+                        <div class="published" style="font-size: small; text-align: center;">July 11, 1960 </div>
+                        <div class="story" style="font-size: small; text-align: center; margin: 5px;"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Lorem ipsum dolor sit amet. </div>
+                        <div class="price">$14.99</div>
+                    </p>
+                    <div class="buttons">
+                        <a class="btn-cart" href="order.html">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                           <span>Add to Cart </span>
+                        </a>    
+                        
+                        <a class="btn-wish" href="#"">
+                            <i class="fa-solid fa-star"></i>
+                            <span>Wishlist </span>
+                        </a>
+                    
+                        <a class="btn-buy" href="order.html">
+                            <span>Buy Now </span>
+                        </a>
+                    </div>
+                </div>
+            </div> 
+    
+            <div class="card">
+                <img class="book-cover" src="images/image2.jpg">
+                <div class= "book-info">
+                    <p> 
+                        <div class="title" style="font-size: small; text-align: center;" >	The Great Gatsby </div>
+                        <div class="author" style="font-size: small; text-align: center;">F. Scott Fitzgerald </div>
+                        <div class="published" style="font-size: small; text-align: center;">April 10, 1925 </div>
+                        <div class="story" style="font-size: small; text-align: center; margin: 5px;"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Lorem ipsum dolor sit amet. </div>
+                        <div class="price">$16.19</div>
+                    </p>
+                    <div class="buttons">
+                        <a class="btn-cart" href="order.html">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                           <span>Add to Cart </span>
+                        </a>    
+                        
+                        <a class="btn-wish" href="#"">
+                            <i class="fa-solid fa-star"></i>
+                            <span>Wishlist </span>
+                        </a>
+                    
+                        <a class="btn-buy" href="order.html">
+                            <span>Buy Now </span>
+                        </a>
+                    </div>
+                </div>
+            </div> 
+    
+            <div class="card">
+                <img class="book-cover" src="images/image3.jpg">
+                <div class= "book-info">
+                    <p> 
+                        <div class="title" style="font-size: small; text-align: center;" >	1984 </div>
+                        <div class="author" style="font-size: small; text-align: center;">George Orwell</div>
+                        <div class="published" style="font-size: small; text-align: center;">July 11, 1960 </div>
+                        <div class="story" style="font-size: small; text-align: center; margin: 5px;"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Lorem ipsum dolor sit amet. </div>
+                        <div class="price">$19.84</div>
+                    </p>
+                    <div class="buttons">
+                        <a class="btn-cart" href="order.html">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                           <span>Add to Cart </span>
+                        </a>    
+                        
+                        <a class="btn-wish" href="#"">
+                            <i class="fa-solid fa-star"></i>
+                            <span>Wishlist </span>
+                        </a>
+                    
+                        <a class="btn-buy" href="order.html">
+                            <span>Buy Now </span>
+                        </a>
+                    </div>
+                </div>
+            </div> 
+    
+            <div class="card">
+                <img class="book-cover" src="images/image4.jpg">
+                <div class= "book-info">
+                    <p> 
+                        <div class="title" style="font-size: small; text-align: center;" >	Adventures of Huckberry Finn </div>
+                        <div class="author" style="font-size: small; text-align: center;">Mark Twain</div>
+                        <div class="published" style="font-size: small; text-align: center;">December 10, 1884</div>
+                        <div class="story" style="font-size: small; text-align: center; margin: 5px;"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Lorem ipsum dolor sit amet. </div>
+                        <div class="price">$16.14</div>
+                    </p>
+                    <div class="buttons">
+                        <a class="btn-cart" href="#">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                           <span>Add to Cart </span>
+                        </a>    
+                        
+                        <a class="btn-wish" href="#"">
+                            <i class="fa-solid fa-star"></i>
+                            <span>Wishlist </span>
+                        </a>
+                    
+                        <a class="btn-buy" href="order.html">
+                            <span>Buy Now </span>
+                        </a>
+                    </div>
+                </div>
+            </div> 
+    
+        </div>
+</div>
+<div>
+    <div>
+        <div class="checkout button" style="margin: 20px;">
+            <a href="order.html"><button type="buttons">Checkout</button></a>
+        </div>
+    </div>
+
+</div>
+<div>
+    <div class="navbot">
+        <div class="navbottom">
+            <a>eBook Corner @copyright 2022</a>
+        </div>
+    </div>
+</div>
+
+   
+</body>
+</html>

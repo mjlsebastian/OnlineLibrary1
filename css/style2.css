@@ -1,0 +1,148 @@
+navigation bar
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.body {
+    font-family: 'Poppins', sans-serif;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.navbar {
+    height: 40px;
+    /* width: 100px; */
+    padding: 10px 30px;
+    background-color: #183453f3;
+    position: relative;
+    color: whitesmoke;
+}
+.nav-header {
+    color: whitesmoke;
+    text-decoration: none;
+}
+.navbar .nav-header {
+    display: inline;
+}
+.navbar .nav-header nav-logo {
+    display: inline-block;
+    margin-top: -7px;
+    color: whitesmoke;
+}
+.navbar .nav-links {
+    display: inline;
+    float: right;
+    font-size: 18px;
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: 550;
+    color: whitesmoke;
+}
+.navbar .nav-links .loginBtn {
+    display: inline-block;
+    padding: 5px 10px;
+    margin-left: 20px;
+    font-size: 17px;
+    color: #183453f3;
+    text-decoration: none;
+}
+.navbar .nav-links a {
+    padding: 10px 12px;
+    text-decoration: none;
+    font-weight: 550;
+    color: whitesmoke;
+}
+/* Hover effects */
+.navbar .nav-links a:hover {
+    background-color:#22b877;
+    transition: ease-in-out 1s;
+    animation: face 5s; 
+}
+/* responsive navbar toggle button */
+.navbar #nav-check1, .navbar .nav-btn {
+    display: none;
+}
+.search {
+    display: flex;
+    background-color:whitesmoke;
+	width: 250px;
+	height: 20px;
+	margin: 20px 10px;
+    border-radius: 22px;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+@media (max-width: 650px) {
+    .navbar .nav-btn {
+        display: inline-block;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+    }
+    .navbar .nav-btn label span {
+        display: block;
+        height: 10px;
+        width: 25px;
+        border-top: 3px solid whitesmoke;
+    }
+    .navbar .nav-btn label:hover, .navbar #nav-check:checked
+        .nav-btn label {
+        background-color: #183453f3;       
+    }
+    .navbar .nav-links {
+        position: absolute;
+        display: block;
+        text-align: center;
+        width: 50px;
+        background-color: #183453f3;
+        transition: all 0.3s ease-in;
+        overflow-y: hidden;
+        top: 70px;
+        right: 0px;
+    }
+    .navbar .nav-links a{
+        display: block;
+        text-decoration: none;
+    }
+
+    /* when nav toggle btton not checked */
+    .navbar #nav-check1:checked ~ .nav-links {
+        height: calc(100vh - 70px);
+        overflow-y: auto;
+    }
+    .navbar .nav-links .loginBtn {
+        padding: 10px 40px;
+        margin: 20px;
+        font-size: 18px;
+        font-weight: bold;
+        color: #183453f3;
+    }
+    .navbot .navbottom {
+        display: flex; 
+        flex-direction: column;
+        padding: 10px ;
+        /* margin: 20px; */
+    }  
+    .search {
+        display: flex;
+        width: 250px;
+        height: 20px;
+        margin: 20px 10px;
+        border-radius: 22px;
+        flex-direction: column;
+    }
+}
+.navbot .navbottom {
+    /* display: block; */
+    color: rgb(235, 235, 235);
+    background-color: #183453f3;
+    text-decoration: none;
+    padding: 20px;
+    margin: 0%;
+    margin-top: 40px;
+    font-family: 'Poppins', sans-serif; 
+    text-align: center;
+    width: 100%;
+}   
+

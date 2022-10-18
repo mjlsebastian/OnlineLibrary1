@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KodeGO WD23 | Order Form | Online Library </title>
+    <link rel="stylesheet" href="css/style3.css">
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+<body>
+    <div class="navbar">
+        <!-- Navbar logo -->
+        <div class="nav-header">
+            <div class="nav-logo" style="padding-top: 10px;">
+                <a href="index.html">
+                    <img src="images/logo.jpg" width="131px" alt="logo">
+                </a>
+            <div class="nav-links">
+                <a href="index.html" style="color: white;" >Home</a>
+                <a href="#" style="color: white;">About</a>
+                <a href="#" style="color: white">Contact Us</a>
+                <!-- <button type="button" style="padding: 2px 15px;">Login</button> -->
+            </div>
+        </div>
+    
+        <!-- responsive navbar toggle button -->
+        <input type="checkbox" id="nav-check1">
+        <div class="nav-btn" style="padding: 2px;">
+            <label for="nav-check">
+                <span></span>        
+                <span></span>        
+                <span></span>           
+            </label>
+        </div>
+    </div>
+    </div>
+
+    <div class='container'>
+        <div class='window'>
+            <div class='order-info'>
+                <div class='order-info-content'>
+                <h2>Order Summary</h2>
+            <div class='line'></div>
+              <table class='order-table'>
+                <tbody>
+                  <div>
+                    <td><img src="images/image1.jpg" class='full-width'></img>
+                        <td>
+                            <br> <span class='thin'>To Kill A Mockingbird</span>
+                            <br> Harper Lee<br> <span class='thin small'> July 11, 1960</span>
+                        </td>
+                    </td>
+
+      
+                  </div>
+                  <div>
+                    <td>
+                      <div class='price'>$14.99</div>
+                    </td>
+                  </div>
+                </tbody>
+      
+              </table>
+            <div class='line'></div>
+                <table class='order-table'>
+                <tbody>
+                  <div>
+                    <td><img src="images/image4.jpg"  class='full-width'></img>
+                    </td>
+                    <td>
+                      <br> <span class='thin'>Adventures of Huckberry Finn</span>
+                      <br>Mark Twain<br> <span class='thin small'> December 10, 1884</span>
+                    </td>
+                  </div>
+                    <td>
+                      <div class='price'>$16.14</div>
+                    </td>
+                  </div>
+                </tbody>
+                </table>
+            <div class='line'></div>
+                <div class='total'>
+                <span style='float:left;'>
+                  TOTAL
+                </span>
+                <span style='float:right; text-align:right;'>
+                  $31.13
+                </span>
+                </div>
+            </div>
+        </div>
+            <div class='credit-info'>
+                <div class='credit-info-content'>
+                    <div class='half-input-table'>
+                        <div> Information
+                            <form method="">
+                                <input type="text" placeholder="Firstname" id="firstname" class="input-field"><br>
+                                <input type="text" placeholder="Surname" id="Surname" class="input-field"><br>
+                                <input type="number" placeholder="contact number" pattern="[0-9]"  class="input-field"><br>
+                            </form>    
+                        </div>
+                        <div class="address" style="margin-top: 10px;" > Shipping Address
+                            <div class="selection">
+                                <select name="regions" id="regions" class="input-field" style="color: black ;" >                            
+                                    <option style="color: white ;">country </option>
+                                    <option value="1">China</option>
+                                    <option value="2">Malaysia</option>
+                                    <option value="3">Miyanmar</option>
+                                    <option value="4">Philippines</option>
+                                    <option value="5">Singapore</option>
+                                    <option value="6">Thailand</option>
+                                    <option value="7">Vietnam</option>
+                                </select>
+                            </div>
+                            <form >
+                                <input type="text" placeholder="Address" id="street" class="input-field"><br>
+                                <input type="number" placeholder="Zipcode" pattern="[0-9]" class="input-field"><br>
+                            </form>
+                        </div>
+                        <div class="payment" style="margin-top: 15px;"> Please select your type of Payment:
+                            <div class="radio" style="margin-top: 10px;">
+                                <input type="radio" id="cod" name="pay_method" value="cod">
+                                <label>Cash on Delivery</label>
+                                <input type="radio" id="paypal" name="pay_method" value="paypal">
+                                <label>Paypal</label>
+                                <input type="radio" id="credit" name="pay_method" value="credit">
+                                <label>Credit Card</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+                <button class="pay-btn" href="thankyou.html">Pay Now</button>
+      
+            </div>
+      
+            </div>
+    </div>
+<div class="navbot">
+    <div class="navbottom">
+        <a>eBook Corner @copyright 2022</a>
+    </div>
+</div>
+</body>
+</html>
